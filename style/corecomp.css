@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/** {
+    font-family: 'Quicksand', sans-serif;
+}*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid {
+    padding:0px;
+    margin: 0px;
+}
+
+.headingcc {
+    font-size: 6vw;
+    color: #00305b;
+}
+
+.maincc {
+    background-color: #eaf4f6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 200px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 4%;
+}
+
+.boxcc {
+    background-color: #fafafa;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.wrappercc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    margin: 5px auto;
+    display: flex;
+    opacity: 1;
+    transition: 1s;
+}
+
+.elementcc {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 24vw;
+    background-color: #00305b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    font-size: 22px;
+    padding: 15%;
+    transition: 1s;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+.wrappercc.show {
+    opacity: 1;
+}
+
+.textcc {
+    text-align: center;
+    color: #00305b;
+}
+
+/*@media screen and (max-width: 992px) {
+    .headingcc {
+        font-size: 10vw;
+    }
+    .boxcc {
+        flex-direction: column;
+    }
+    .wrappercc {
+        width: 80vw;
+    }
+    .elementcc {
+        margin: auto;
+        height: 40vw;
+        width: 40vw;
+        border-radius: 80vw;
+        font-size: 7vw;
+    }
+}*/

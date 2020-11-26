@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.slideshow_container {
+    width: 100%;
+    background-color: black;
+    height: 50vw;
+}
+
+.slideshow img {
+    vertical-align: middle;
+}
+
+.slideshow {
+    box-sizing: border-box;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* padding-top: 3vw; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 47vw;
+    overflow-x: hidden;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 2s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide_prev,
+.slide_next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.slide_next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slide_prev:hover,
+.slide_next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide_caption {
+    text-align: center;
+    background-color: #002342;
+    padding: 2px 16px;
+    color: white;
+}
+
+.slide_row {
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slides_row::-webkit-scrollbar {
+    display: none;
+}
+
+.slide_column {
+    display: inline-block;
+    width: 25%;
+    height: 10vw;
+}
+
+.slide_column img {
+    width: 100%;
+    height: 95%;
+}
+
+.slide_thumb {
+    opacity: 0.5;
+}
+
+.slide_active,
+.slide_thumb:hover {
+    opacity: 1;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+}
+
+#caption {
+    padding: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.gallery {
+    height: 800vh;
+    position: relative;
+    z-index: -1000;
+}
+
+
+/* .content123{
+  z-index: -2000;
+  position: relative;
+} */
+
+.gal-imgs {
+    /* position: fixed; */
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: radial-gradient( rgb(44, 44, 44), black);
+    z-index: -999;
+}
+
+.gal-img {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0.0;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+@media screen and (max-width:1024px) {
+    .slides {
+        height: 54vw;
+    }
+    .slideshow_container {
+        height: 60vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .slides {
+        height: 50vw;
+    }
+}
+
+#events {
+    background-color: white;
+}
+
+.tooltip .tooltiptext {
+    visibility: visible;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.allteamcards{
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 80%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    background-color: #00305b;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.allteamcards .card{
+    width: 19vw;
+    height: 19vw;
+    overflow: hidden;
+    text-align: center;
+    margin: 0.5vw;
+}
+
+.allteamcards .card-img-overlay{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.555);
+    transition: opacity 0.4s ease;
+    padding: 1.5vw;
+}
+
+.allteamcards .card:hover .card-img-overlay{
+    opacity: 1;
+}
+
+.allteamcards .teamlink{
+    width: 4vw;
+    height: 4vw;
+    display: inline-block;
+    margin: 0.5em;
+    transition: opacity 0.1s ease;
+}
+
+.allteamcards .teamlink img{
+    width: 100%;
+    height: 100%;
+}
+
+.teamlink:hover{
+    opacity: 0.4;
+}
+
+.allteamcards .card-title{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.allteamcards .card-text{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+
+.allteamcards .links{
+    position: relative;
+    /* top: 3em; */
+}
