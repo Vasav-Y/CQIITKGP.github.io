@@ -8,48 +8,35 @@ html {
     box-sizing: inherit;
   }
 
-
+h3 {
+color: white;
+text-align: center;
+}
 .masonry { 
-    column-count: 4;
-    column-gap: 1em;
-    width: 100%;
-    position: relative;
-    background-color: #00305b;
-    padding-top: 2rem;
-  }
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
   
-  .item { 
-    background-color: #eee;
-    display: inline-block;
-    margin: 0 0 1em;
-    width: 100%;
+  }
+
+.masonry > div {
+    margin: 10px;
+    width: 30%;
+
+  }
+
+.item { 
+    background-color: #eee;    
+    margin: 0 0 1em;    
     overflow: hidden;
+    background-color: #00305b;
+    border-radius: 10px;
   }
 
-  .item img{
-      width: 100%;
-      height: auto;
-      display: block;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    .masonry {
-      column-count: 4;
-    }
-  }
-  
-  /* Masonry on medium-sized screens */
-  @media only screen and (max-width: 1023px) and (min-width: 768px) {
-    .masonry {
-      column-count: 3;
-    }
-  }
-  
-  /* Masonry on small screens */
-  @media only screen and (max-width: 767px){
-    .masonry {
-      column-count: 2;
-    }
+  .item img {
+    width: 100%;
+    height: auto;      
+    
   }
 
 @keyframes comein{
@@ -101,8 +88,9 @@ html {
 
 .alumpicsmiddle{
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     display: block;
+    background-color: #00305b;
 }
 
 .heading{
@@ -112,3 +100,40 @@ html {
     color: #00305b;
     text-align: center;
 }
+
+.last {
+      /*color: rgba(255,255,255);*/
+      color: white;
+      background-color: #00305b;/*#6610f2;/*rgba(234,244,246)*/ /*rgba(0,48,91,0.9)*//*#f4f4f4*/;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+      transition: 0.3s;
+      border: none;
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    #container {
+        width: 100%;
+        margin: 2em auto;
+    }
+
+    .cols {
+        -moz-column-count:3;
+        -moz-column-gap: 3%;
+        -moz-column-width: 30%;
+        -webkit-column-count:3;
+        -webkit-column-gap: 3%;
+        -webkit-column-width: 30%;
+        column-count: 3;
+        column-gap: 2%;
+        column-width: 30%;
+    }
+
+    .box {
+        margin-bottom: 20px;
+        height:200px;
+        background:#BFBFBF;
+    }
