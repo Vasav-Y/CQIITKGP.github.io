@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+.masonry { 
+    column-count: 4;
+    column-gap: 1em;
+    width: 100%;
+    position: relative;
+    background-color: #00305b;
+    padding-top: 2rem;
+  }
+  
+  .item { 
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .item img{
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .masonry {
+      column-count: 4;
+    }
+  }
+  
+  /* Masonry on medium-sized screens */
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+      column-count: 3;
+    }
+  }
+  
+  /* Masonry on small screens */
+  @media only screen and (max-width: 767px){
+    .masonry {
+      column-count: 2;
+    }
+  }
+
+@keyframes comein{
+  0%{
+    transform: translate3d(100%,100%,0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
+
+.item img{
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.atcard-overlay{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.438);
+    transition: opacity 0.5s ease;
+}
+
+.atcard-overlay:hover{
+    opacity: 1;
+}
+
+.card{
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+.atcard-overlay .card-title{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.atcard:hover .atcard-img{
+    transform: scale(1.2)
+}
+
+.alumteampics{
+    width: 100%;
+    background-color: #00305b;
+    height: auto;
+    position: relative;
+    padding-top: 5rem;
+}
+
+.alumpicsmiddle{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.heading{
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem;
+    color: #00305b;
+    text-align: center;
+}
