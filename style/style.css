@@ -236,6 +236,7 @@ body {
     display: inline-block;
     margin: 0.5em;
     transition: opacity 0.1s ease;
+    opacity: 0.82;
 }
 
 .allteamcards .teamlink img{
@@ -244,7 +245,7 @@ body {
 }
 
 .teamlink:hover{
-    opacity: 0.4;
+    opacity: 1;
 }
 
 .allteamcards .card-title{
