@@ -738,10 +738,12 @@ hr {
 .OA_icons {
     height: 40px;
     width: 40px;
+    opacity: 85%;
 }
 
+
 .OA_icons:hover {
-    opacity: 40%;
+    opacity: 100%;
 }
 
 .attorneys_box {
