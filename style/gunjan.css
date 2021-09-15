@@ -168,7 +168,7 @@ body {
 
 * {
     margin: 0;
-    padding: 0;
+    
 }
 
 #nav-bar {
@@ -925,4 +925,14 @@ hr {
 
 .icons {
     display: inline-block;
+}
+
+@media screen and (max-width:1025px){
+    #contain{
+        width: 600px;
+        margin: 0 auto;
+    }
+    .adjust{
+        width: 14rem;
+    }
 }
