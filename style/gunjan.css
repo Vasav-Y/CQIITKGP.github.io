@@ -939,10 +939,3 @@ hr {
         width: 14rem;
     }
 }
-
-
-/*gallery body */
-
-.gallery_body {
-    overflow-x: hidden;
-}
