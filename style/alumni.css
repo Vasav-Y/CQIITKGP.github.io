@@ -94,7 +94,7 @@ text-align: center;
 }
 
 .heading{
-    width: 100%;
+    
     background-color: white;
     padding: 0.5rem;
     color: #00305b;
@@ -141,4 +141,7 @@ text-align: center;
     }
     .row{
         justify-content: space-around;
+    }
+    .fixed-top{
+        position: absolute;
     }
