@@ -168,7 +168,6 @@ body {
 
 * {
     margin: 0;
-    padding: 0;
 }
 
 #nav-bar {
@@ -288,7 +287,7 @@ body {
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
-    padding-left: 5%;
+    padding-left: 10%;
     font-weight: lighter;
 }
 
@@ -412,7 +411,7 @@ body {
     font-style: normal;
     font-weight: 50px;
     font-variant: normal;
-    padding-left: 5%;
+    padding-left: 10%;
 }
 
 #blue_heading {
@@ -689,10 +688,9 @@ hr {
     position: relative;
     vertical-align: top;
     overflow: hidden;
-    height: 96%;
+    height: 80%;
     white-space: normal;
 }
-
 
 .our_attorneys_div {
     width: 100%;
@@ -711,12 +709,13 @@ hr {
     transform: scale(1.1);
 }
 
-.OA_text, #executive {
+.OA_text,
+#executive {
     font-family: 'Quicksand', sans-serif;
 }
 
 .OA_heading {
-    color:  #00305b;
+    color: #00305b;
     font-size: 42px;
     padding-bottom: 30px;
     font-family: 'Quicksand', sans-serif;
@@ -741,7 +740,6 @@ hr {
     opacity: 85%;
 }
 
-
 .OA_icons:hover {
     opacity: 100%;
 }
@@ -753,7 +751,6 @@ hr {
     width: 90%;
     margin: 0 auto;
 }
-
 
 @media screen and (max-width:1024px) {
     .item {
@@ -779,6 +776,7 @@ hr {
 
 /*End of part 2*/
 
+
 /* .accordion-section {
     padding-top: 100px;
 } */
@@ -792,23 +790,28 @@ hr {
     font-weight: bold;
 }
 
+
 /* .faq_body {
     background: linear-gradient(to left, #a7fffb 0%, #6699ff 100%);
 } */
 
+.faq_body {
+    overflow-x: hidden;
+}
 
-.faq_heading{
+.faq_heading {
     padding: 86px 10% 20px;
     background-color: #00305b;
     color: white;
 }
-.panel.panel-default{
+
+.panel.panel-default {
     border: 5px solid #00305b;
     border-width: 5px 0;
     margin-bottom: 15px;
 }
 
-.panel-heading{
+.panel-heading {
     background-color: rgba(0, 48, 91, 0.8);
     color: white;
 }
@@ -925,4 +928,25 @@ hr {
 
 .icons {
     display: inline-block;
+}
+
+@media screen and (max-width:1025px) {
+    #contain {
+        /* width: 600px; */
+        margin: 0 auto;
+    }
+    .adjust {
+        width: 14rem;
+    }
+}
+
+
+/* gallery body */
+
+.gallery_body {
+    overflow-x: hidden;
+}
+
+.alumni_body {
+    overflow-x: hidden;
 }
