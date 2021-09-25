@@ -774,6 +774,11 @@ hr {
 }
 
 
+/*.padding_cards {
+    padding-left: 10vw;
+}*/
+
+
 /*End of part 2*/
 
 
@@ -936,7 +941,7 @@ hr {
         margin: 0 auto;
     }
     .adjust {
-        width: 14rem;
+        width: auto;
     }
 }
 
