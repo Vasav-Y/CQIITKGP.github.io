@@ -10,7 +10,7 @@ body {
 }
 
 .container-fluid {
-    padding:0px;
+    padding: 0px;
     margin: 0px;
 }
 
@@ -76,13 +76,14 @@ body {
     text-align: center;
     color: #00305b;
 }
-.adjustment{
+
+.adjustment {
     display: none;
 }
 
-@media screen and (max-width: 426px) {
-    .adjustment{
-        display: block;
+@media screen and (max-width: 500px) {
+    .adjustment {
+        display: none;
     }
     /*.headingcc {
         font-size: 10vw;
@@ -100,5 +101,10 @@ body {
         border-radius: 80vw;
         font-size: 7vw;
     }*/
+}
 
+@media screen and (min-width: 500px) {
+    .adjustment {
+        display: block;
+    }
 }
