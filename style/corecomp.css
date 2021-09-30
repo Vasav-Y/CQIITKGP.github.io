@@ -105,6 +105,6 @@ body {
 
 @media screen and (min-width: 500px) {
     .adjustment {
-        display: block;
+        display: none;
     }
 }
