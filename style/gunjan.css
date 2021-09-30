@@ -897,6 +897,9 @@ hr {
     .panel-heading{
         transform: translateX(20%);
     }
+    .accordion-section .panel-default .panel-body {
+        transform: translateX(20%);
+    }
     .faq_heading{
         height: 40vh;
     }
