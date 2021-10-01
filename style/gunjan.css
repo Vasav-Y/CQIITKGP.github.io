@@ -827,7 +827,7 @@ hr {
 .faq_body,
 .events_body {
     overflow-x: hidden;
-    width: 100%;
+    max-width: 100%;
 }
 
 .faq_heading {
