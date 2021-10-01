@@ -824,12 +824,11 @@ hr {
     background: linear-gradient(to left, #a7fffb 0%, #6699ff 100%);
 } */
 
-
-/* .faq_body,
+.faq_body,
 .events_body {
     overflow-x: hidden;
     width: 100%;
-} */
+}
 
 .faq_heading {
     padding: 125px 10% 20px;
