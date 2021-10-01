@@ -66,6 +66,10 @@ h3 {
     border-radius: 0px;
 }
 
+h5 {
+    font-size: 3vh;
+}
+
 .atcard-overlay .card-title {
     text-align: center;
     position: relative;
@@ -95,8 +99,8 @@ h3 {
 }
 
 .link {
-    width: 4vw;
-    height: 4vw;
+    width: 6vh;
+    height: 6vh;
     display: inline-block;
     margin: 0.5em;
     transition: opacity 0.1s ease;
@@ -127,7 +131,7 @@ h3 {
 .last {
     /*color: rgba(255,255,255);*/
     color: white;
-    background-color: #00305b;
+    background-color: #0f497c;
     /*#6610f2;/*rgba(234,244,246)*/
     /*rgba(0,48,91,0.9)*/
     /*#f4f4f4*/
