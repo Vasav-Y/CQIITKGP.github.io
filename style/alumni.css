@@ -32,10 +32,11 @@ h3 {
     border-radius: 10px;
 }
 
-.item img {
+
+/*.item img {
     width: 100%;
     height: auto;
-}
+}*/
 
 @keyframes comein {
     0% {
@@ -83,6 +84,30 @@ h3 {
     position: relative;
     padding-top: 5rem;
 }
+
+.allteampics .teamlink {
+    width: 4vw;
+    height: 4vw;
+    display: inline-block;
+    margin: 0.5em;
+    transition: opacity 0.1s ease;
+    opacity: 0.82;
+}
+
+.link {
+    width: 4vw;
+    height: 4vw;
+    display: inline-block;
+    margin: 0.5em;
+    transition: opacity 0.1s ease;
+    opacity: 0.82;
+}
+
+
+/*.allteampics .teamlink img {
+    width: 100%;
+    height: 100%;
+}*/
 
 .alumpicsmiddle {
     width: 80%;
