@@ -85,6 +85,11 @@ body {
     .adjustment {
         display: none;
     }
+    .textcc {
+        margin: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     /*.headingcc {
         font-size: 10vw;
     }
