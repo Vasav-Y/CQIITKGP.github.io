@@ -67,7 +67,7 @@ h3 {
 }
 
 h5 {
-    font-size: 3vh;
+    font-size: 1rem;
 }
 
 .atcard-overlay .card-title {
@@ -99,8 +99,8 @@ h5 {
 }
 
 .link {
-    width: 6vh;
-    height: 6vh;
+    width: 30%;
+    height: 30%;
     display: inline-block;
     margin: 0.5em;
     transition: opacity 0.1s ease;
@@ -174,4 +174,10 @@ h5 {
 
 .row {
     justify-content: space-around;
+}
+
+.photo {
+    margin: 0%;
+    font-size: 110%;
+    font-weight: bolder;
 }
