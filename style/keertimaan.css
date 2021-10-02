@@ -2,13 +2,7 @@
 body {
     background-color: #eaf4f6;
 }
-.bg2{
-    height: calc( 20vh + 20vw); 
-    background-image: url('img/busy2.png'); 
-    background-attachment:fixed; 
-    background-position: center;
-    background-repeat: no-repeat"
-}
+
 
 .eventHeading {
     color: black;
@@ -82,12 +76,6 @@ body {
     .eventContainer .eventContentRight {
         font-size: 12px;
     }
-    .bg2{
-    background-size:100%;
-    background-attachment:scroll; 
-    background-position: center;
-    background-repeat: no-repeat"
-}
 }
 
 @media(max-width: 600px) {
