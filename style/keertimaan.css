@@ -82,7 +82,12 @@ body {
     .eventContentRight {
         margin: auto;
         transform: translateX(-10%);
-        width: 100%;
+    }
+    .eventContainer .eventContentRight {
+        width: 80%;
+    }
+    .eventContainer .eventContentLeft {
+        width: 80%;
     }
     .Kman_left {
         flex-direction: column-reverse;
@@ -93,7 +98,7 @@ body {
     .imgbox {
         width: 60%!important;
         height: 40vw!important;
-        transform: translateX(-10%);
+        transform: translateX(-12%);
     }
     .eventContainer {
         text-align: center;
