@@ -208,6 +208,14 @@ body {
     font-size: 14px;
     font-family: 'Quicksand', sans-serif;
 }
+.bg2 {
+    width: 100%;
+    height: calc( 20vh + 20vw); 
+    background: url('img/busy2.png'); 
+    background-attachment:fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 /*AbD content end*/
@@ -634,7 +642,14 @@ ul.b{
     }
     .bg2 {
         width: 100%;
+        height: calc( 20vh + 20vw); 
+        background-image: url('img/busy2.png'); 
+        background-attachment:fixed; 
+        background-position: center;
+        background-repeat: no-repeat;
     }
+  
+    
 }
 
 @media screen and (max-width:342px) {
@@ -996,6 +1011,12 @@ hr {
     .faq_heading {
         position: relative;
         left: -8%;
+    }
+     .bg2{
+        background-size:100%;
+        background-attachment:scroll; 
+        background-position: center;
+        background-repeat: no-repeat"
     }
 }
 
