@@ -268,3 +268,45 @@ img.Resize {
     width: fit-content;
     height: -webkit-fill-available;
 }
+
+#noticeboard {
+    height: 10rem;
+    width: 100%;
+    background-color: darkkhaki;
+    margin-top: -100px;
+}
+
+#p_event_name {
+    margin-top: 100px;
+    padding-top: 65px;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline wavy cornflowerblue;
+}
+
+#p_event_desc {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#carouselExampleCaptions {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 20;
+    background-color: aquamarine;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carousel-inner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.first-page {
+    margin-top: 100px;
+}
