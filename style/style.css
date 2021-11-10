@@ -289,9 +289,10 @@ img.Resize {
 #p_event_desc {
     text-align: center;
     padding-top: 10px;
-}
+} */
 
-#carouselExampleCaptions {
+
+/* #carouselExampleCaptions {
     display: block;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -306,20 +307,19 @@ img.Resize {
     margin-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
-} */
+}
+ */
 
 
 /* .first-page {
     margin-top: 100px;
 } */
 
-
-/* #myCarousel {
-    height: 40rem;
+#myCarousel {
+    height: 60rem;
     width: 100%;
-    margin-top: 10%;
     margin-bottom: 10%;
-} */
+}
 
 .carousel-item {
     height: 32rem;
@@ -334,4 +334,18 @@ img.Resize {
     left: 0;
     right: 0;
     padding-bottom: 50px;
+}
+
+.container h1 {
+    margin-top: 100px;
+    padding-top: 65px;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline wavy cornflowerblue;
+}
+
+.container p {
+    text-align: center;
+    padding-top: 10px;
 }
