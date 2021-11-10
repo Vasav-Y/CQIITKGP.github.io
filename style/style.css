@@ -269,7 +269,8 @@ img.Resize {
     height: -webkit-fill-available;
 }
 
-#noticeboard {
+
+/* #noticeboard {
     height: 10rem;
     width: 100%;
     background-color: darkkhaki;
@@ -305,8 +306,32 @@ img.Resize {
     margin-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+} */
+
+
+/* .first-page {
+    margin-top: 100px;
+} */
+
+
+/* #myCarousel {
+    height: 40rem;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+} */
+
+.carousel-item {
+    height: 32rem;
+    background: #777;
+    color: white;
+    position: relative;
 }
 
-.first-page {
-    margin-top: 100px;
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
 }
