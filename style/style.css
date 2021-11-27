@@ -315,11 +315,21 @@ img.Resize {
     margin-top: 100px;
 } */
 
-#myCarousel {
+
+/* #myCarousel {
     height: 60rem;
     width: 100%;
     margin-bottom: 10%;
-}
+    position: absolute;
+} */
+
+
+/* .carousel-inner {
+    height: 40rem;
+    width: 100%;
+    margin-top: 2%;
+    position: relative;
+} */
 
 .carousel-item {
     height: 32rem;
@@ -336,7 +346,8 @@ img.Resize {
     padding-bottom: 50px;
 }
 
-.container h1 {
+
+/* .container h1 {
     margin-top: 100px;
     padding-top: 65px;
     font-size: 25px;
@@ -348,4 +359,4 @@ img.Resize {
 .container p {
     text-align: center;
     padding-top: 10px;
-}
+} */

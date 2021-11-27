@@ -542,7 +542,6 @@ body {
   left : 50%;
   padding-top: 7%;
 }
-
 #practicearea .list1 ul li{
   font-size: 4vh;
   line-height: 500%;
@@ -554,17 +553,14 @@ body {
   left : 75%;
   padding-top: 7%;
 }
-
 #practicearea .list2 ul li{
   font-size: 4vh;
   line-height: 500%;
   color:#004d99;
 }
-
 ul.a{
   list-style-type: square;
 }
-
 ul.b{
   list-style-type: square;
 }*/
@@ -1074,7 +1070,6 @@ hr {
     .preloader_loader span:nth-child(4) {
       bottom: 0;
       right: 0; }
-
 .preloader_communique {
   color: white;
   font-family: 'Playfair Display', serif;
