@@ -315,14 +315,17 @@ img.Resize {
     margin-top: 100px;
 } */
 
+.carousel {
+    min-height: 26rem;
+}
+
 #myCarousel {
-    height: 60rem;
     width: 100%;
     margin-bottom: 10%;
 }
 
 .carousel-item {
-    height: 32rem;
+    height: 25rem;
     background: #777;
     color: white;
     position: relative;
