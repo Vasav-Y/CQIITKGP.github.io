@@ -10,7 +10,7 @@ body {
 }
 
 .container-fluid {
-    padding:0px;
+    padding: 0px;
     margin: 0px;
 }
 
@@ -77,8 +77,20 @@ body {
     color: #00305b;
 }
 
-/*@media screen and (max-width: 992px) {
-    .headingcc {
+.adjustment {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .adjustment {
+        display: none;
+    }
+    .textcc {
+        margin: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    /*.headingcc {
         font-size: 10vw;
     }
     .boxcc {
@@ -93,5 +105,11 @@ body {
         width: 40vw;
         border-radius: 80vw;
         font-size: 7vw;
+    }*/
+}
+
+@media screen and (min-width: 500px) {
+    .adjustment {
+        display: none;
     }
-}*/
+}

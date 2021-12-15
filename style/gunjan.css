@@ -168,7 +168,6 @@ body {
 
 * {
     margin: 0;
-    padding: 0;
 }
 
 #nav-bar {
@@ -208,6 +207,15 @@ body {
     font-weight: bolder;
     font-size: 14px;
     font-family: 'Quicksand', sans-serif;
+}
+
+.bg2 {
+    width: 100%;
+    height: calc( 20vh + 20vw);
+    background: url('img/busy2.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -288,8 +296,10 @@ body {
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
-    padding-left: 5%;
+    padding-left: 10%;
     font-weight: lighter;
+    text-align: center;
+    width: 100%;
 }
 
 .fade-in {
@@ -412,7 +422,7 @@ body {
     font-style: normal;
     font-weight: 50px;
     font-variant: normal;
-    padding-left: 5%;
+    padding-left: 10%;
 }
 
 #blue_heading {
@@ -532,7 +542,6 @@ body {
   left : 50%;
   padding-top: 7%;
 }
-
 #practicearea .list1 ul li{
   font-size: 4vh;
   line-height: 500%;
@@ -544,17 +553,14 @@ body {
   left : 75%;
   padding-top: 7%;
 }
-
 #practicearea .list2 ul li{
   font-size: 4vh;
   line-height: 500%;
   color:#004d99;
 }
-
 ul.a{
   list-style-type: square;
 }
-
 ul.b{
   list-style-type: square;
 }*/
@@ -633,6 +639,11 @@ ul.b{
     }
     .bg2 {
         width: 100%;
+        height: calc( 20vh + 20vw);
+        background-image: url('img/busy2.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -663,6 +674,28 @@ ul.b{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@media screen and (max-width:500px) {
+    .vision-text {
+        padding-top: 15%;
+        padding-left: 14%;
+        padding-right: 22%;
+        margin: auto;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .vision-text {
+        padding: 50px 100px 50px;
+    }
+}
+
+.text-center {
+    /* margin: auto; */
+    text-align: center;
+}
+
 hr {
     border-style: solid;
     border-color: #66e0ff;
@@ -689,10 +722,9 @@ hr {
     position: relative;
     vertical-align: top;
     overflow: hidden;
-    height: 96%;
+    height: 80%;
     white-space: normal;
 }
-
 
 .our_attorneys_div {
     width: 100%;
@@ -711,12 +743,13 @@ hr {
     transform: scale(1.1);
 }
 
-.OA_text, #executive {
+.OA_text,
+#executive {
     font-family: 'Quicksand', sans-serif;
 }
 
 .OA_heading {
-    color:  #00305b;
+    color: #00305b;
     font-size: 42px;
     padding-bottom: 30px;
     font-family: 'Quicksand', sans-serif;
@@ -738,10 +771,11 @@ hr {
 .OA_icons {
     height: 40px;
     width: 40px;
+    opacity: 85%;
 }
 
 .OA_icons:hover {
-    opacity: 40%;
+    opacity: 100%;
 }
 
 .attorneys_box {
@@ -751,7 +785,6 @@ hr {
     width: 90%;
     margin: 0 auto;
 }
-
 
 @media screen and (max-width:1024px) {
     .item {
@@ -767,7 +800,7 @@ hr {
 
 @media screen and (max-width:500px) {
     .item {
-        width: 93.6%!important;
+        width: 55%!important;
     }
     .OA_image:hover {
         transform: scale(1.025);
@@ -775,7 +808,13 @@ hr {
 }
 
 
+/*.padding_cards {
+    padding-left: 10vw;
+}*/
+
+
 /*End of part 2*/
+
 
 /* .accordion-section {
     padding-top: 100px;
@@ -790,25 +829,65 @@ hr {
     font-weight: bold;
 }
 
+
 /* .faq_body {
     background: linear-gradient(to left, #a7fffb 0%, #6699ff 100%);
 } */
 
+.faq_body {
+    overflow-x: hidden;
+}
 
-.faq_heading{
-    padding: 86px 10% 20px;
+.faq_heading {
+    padding: 125px 10% 20px;
     background-color: #00305b;
     color: white;
+    height: 40vh;
+    width: 100%;
+    overflow: hidden;
 }
-.panel.panel-default{
+
+
+/* @media screen and (max-width:1025px){
+    .faq_heading{
+        height: 20vh;
+    }
+} */
+
+
+/* .panel.panel-default {
     border: 5px solid #00305b;
     border-width: 5px 0;
     margin-bottom: 15px;
+} */
+
+.faq-head {
+    font-size: 5rem;
+    text-align: center;
 }
 
-.panel-heading{
-    background-color: rgba(0, 48, 91, 0.8);
+.panel-heading {
+    background-color: rgba(192, 212, 229, 0.8);
+    /*TO change background color on which questions appear*/
     color: white;
+}
+
+#FAQs {
+    margin-top: 50px;
+}
+
+.accordion-section {
+    position: relative;
+    left: -50px;
+    margin-left: 25px;
+}
+
+#faqimg {
+    height: 400px;
+    float: right;
+    z-index: -10;
+    overflow: hidden;
+    margin-right: 15px;
 }
 
 .accordion-section .panel-default>.panel-heading {
@@ -825,14 +904,16 @@ hr {
 .accordion-section .panel-default .panel-title a {
     display: block;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     color: black;
+    text-decoration: none;
 }
 
 .accordion-section .panel-default .panel-title a:after {
     font-family: 'FontAwesome';
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.5rem;
     content: "\f106";
     color: #00305b;
     float: right;
@@ -844,7 +925,95 @@ hr {
 }
 
 .accordion-section .panel-default .panel-body {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1350px) {
+    #faqimg {
+        float: none;
+        height: 300px;
+    }
+    .faqimg {
+        text-align: center;
+        margin: 0;
+    }
+    .panel-heading {
+        transform: translateX(20%);
+    }
+    .accordion-section .panel-default .panel-body {
+        transform: translateX(20%);
+    }
+    .faq_heading {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .accordion-section {
+        left: 0;
+        width: 100vw;
+    }
+    .accordion-section .panel-default .panel-title a {
+        font-size: 1.2rem;
+    }
+    .accordion-section .panel-default .panel-body {
+        font-size: 1.1rem;
+    }
+    #faqimg {
+        float: none;
+        height: 280px;
+        position: relative;
+        left: 20px;
+    }
+    .faqimg {
+        text-align: center;
+        margin: 0;
+        position: relative;
+        left: 50px;
+    }
+    #FAQs {
+        margin-top: 10px;
+    }
+    .faq_heading {
+        height: 20vh;
+    }
+    .panel-heading {
+        transform: translateX(20%);
+    }
+    .accordion-section .panel-default .panel-body {
+        transform: translateX(20%);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .panel-heading {
+        transform: translateX(-1%);
+        /* margin: auto; */
+    }
+    .accordion-section .panel-default .panel-body {
+        transform: translateX(-1%);
+    }
+    .accordion-section .panel-default .panel-title a {
+        font-size: 1.1rem;
+    }
+    .accordion-section .panel-default .panel-body {
+        font-size: 1.1rem;
+    }
+    #faqimg {
+        position: relative;
+        left: -10%;
+    }
+    .faq_heading {
+        position: relative;
+        left: -8%;
+    }
+    .bg2 {
+        background-size: 100%;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat"
+
+    }
 }
 
 
@@ -901,7 +1070,6 @@ hr {
     .preloader_loader span:nth-child(4) {
       bottom: 0;
       right: 0; }
-
 .preloader_communique {
   color: white;
   font-family: 'Playfair Display', serif;
@@ -923,4 +1091,35 @@ hr {
 
 .icons {
     display: inline-block;
+}
+
+@media screen and (max-width:1025px) {
+    #contain {
+        /* width: 600px; */
+        margin: 0 auto;
+    }
+    .adjust {
+        width: auto;
+        margin: auto;
+    }
+}
+
+
+/* gallery body */
+
+.gallery_body {
+    overflow-x: hidden;
+}
+
+.alumni_body {
+    overflow-x: hidden;
+}
+
+
+/*ul {
+    list-style-type: "★ ";
+}*/
+
+ul {
+    list-style-type: none;
 }

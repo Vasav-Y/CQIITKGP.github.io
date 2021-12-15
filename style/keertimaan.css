@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-body{
+body {
     background-color: #eaf4f6;
 }
-.eventHeading{
+
+
+.eventHeading {
     color: black;
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
@@ -19,8 +21,10 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 30px;
 }
-.eventContainer .eventContentLeft{
+
+.eventContainer .eventContentLeft {
     font-family: 'Quicksand', sans-serif;
     width: 50%;
     height: fit-content;
@@ -29,15 +33,17 @@ body{
     padding: 0 3%;
     font-size: 20px;
 }
-.eventContainer .imgbox{
+
+.eventContainer .imgbox {
     position: relative;
     width: 37%;
-    height:25vw;
+    height: 25vw;
     margin: auto;
     border: 5px solid #061a2c;
     background-color: #061a2c;
 }
-.eventContainer .imgbox .event_image{
+
+.eventContainer .imgbox .event_image {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -46,13 +52,14 @@ body{
     object-fit: cover;
     display: none;
 }
-.eventContainer::after{
+
+.eventContainer::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.eventContainer .eventContentRight{
+.eventContainer .eventContentRight {
     font-family: 'Quicksand', sans-serif;
     width: 50%;
     height: fit-content;
@@ -61,36 +68,45 @@ body{
     padding-left: 3%;
     font-size: 20px;
 }
-@media(max-width: 800px){
 
-    .eventContainer .eventContentLeft{
+@media(max-width: 800px) {
+    .eventContainer .eventContentLeft {
         font-size: 12px;
     }
-    .eventContainer .eventContentRight{
+    .eventContainer .eventContentRight {
         font-size: 12px;
     }
 }
 
-@media(max-width: 600px){
-    .eventContentLeft,.eventContentRight{
+@media(max-width: 600px) {
+    .eventContentLeft,
+    .eventContentRight {
         margin: auto;
-        width: 90%;
+        transform: translateX(-10%);
     }
-    .Kman_left{
+    .eventContainer .eventContentRight {
+        width: 80%;
+    }
+    .eventContainer .eventContentLeft {
+        width: 80%;
+    }
+    .Kman_left {
         flex-direction: column-reverse;
     }
-    .Kman_right{
+    .Kman_right {
         flex-direction: column;
     }
-    .imgbox{
+    .imgbox {
         width: 60%!important;
         height: 40vw!important;
+        transform: translateX(-12%);
     }
-    .eventContainer{
+    .eventContainer {
         text-align: center;
     }
 }
 
-.eventContentRight , .eventContentLeft {
-    font-family:  'Quicksand', sans-serif;
+.eventContentRight,
+.eventContentLeft {
+    font-family: 'Quicksand', sans-serif;
 }

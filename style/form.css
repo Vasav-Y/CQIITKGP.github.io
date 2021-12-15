@@ -99,8 +99,8 @@ input[type=submit]:hover{
   color: #66fcf1;
 } */
 
-.form_header h4{
-  padding-top: 20px;
+.form_header h4 {
+    padding-top: 20px;
 }
 
 .contact_links {
@@ -108,7 +108,8 @@ input[type=submit]:hover{
     width: 100%;
     padding: auto;
     justify-content: center;
-    background-color: #116466;
+    /* background-color: #116466; */
+    background-color: #00305b;
 }
 
 .contact_links_data {
@@ -122,10 +123,11 @@ input[type=submit]:hover{
     margin: 7px 0 5px;
     padding-left: 3px;
     padding-right: 3px;
+    opacity: 92%;
 }
 
 .contact_link_img:hover {
-    opacity: 20%;
+    opacity: 100%;
 }
 
 
@@ -155,9 +157,9 @@ input[type=submit]:hover{
 
 #form-div {
     background-color: hsl(208 100% 13% / 1);
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 35px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vw;
     padding-bottom: 50px;
     width: 30%;
     /* float: left; */
@@ -281,10 +283,11 @@ textarea:focus {
     font-family: 'Quicksand', sans-serif;
 }
 
-#button-blue:hover {
+
+/*#button-blue:hover {
     background-color: rgba(0, 0, 0, 0);
     color: #0493bd;
-}
+}*/
 
 
 /* .submit{
@@ -293,9 +296,10 @@ textarea:focus {
   justify-content: center;
 } */
 
-.submit:hover {
+
+/*.submit:hover {
     color: #3498db;
-}
+}*/
 
 .ease {
     width: 0px;
