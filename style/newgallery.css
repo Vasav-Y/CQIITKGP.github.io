@@ -75,36 +75,3 @@
         margin-top: 0.9rem;
     }
 }
-
-@media screen and (max-width: 400px) {
-    .swiper-slide img {
-        width: 100px;
-    }
-    .gallery-title {
-        margin-left: 150px;
-        font-size: 1.4rem;
-        margin-bottom: 0.9rem;
-    }
-    .swiper {
-        height: 150px;
-    }
-    .galleryrow {
-        margin-top: 0.9rem;
-    }
-    .upsc1 {
-        margin-left: 43%;
-        margin-top: 20%;
-    }
-    .harvard {
-        margin-left: 37%;
-    }
-    .isb {
-        margin-left: 43%;
-    }
-    .hidayat {
-        margin-left: 37%;
-    }
-    .cat {
-        margin-left: 40%;
-    }
-}
