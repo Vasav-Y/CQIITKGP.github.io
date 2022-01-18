@@ -3,6 +3,8 @@
   width: 800px;
   max-width: 100%;
   text-align: center;
+
+  transition: opacity 1s;
 }
 
 #noticeboard-slider input[type="radio"] {
@@ -156,4 +158,10 @@
   #slide4:checked ~ #controls label:nth-last-child(1) {
     margin: 0;
   }
+}
+.noticeBoard-fadeout {
+  opacity: 0;
+}
+.noticeBoard-fadein {
+  opacity: 1;
 }
