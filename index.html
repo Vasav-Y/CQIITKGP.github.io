@@ -16,7 +16,8 @@
     <link rel="stylesheet" type="text/css" href="style/sadhvika.css">
     <!--<link rel="stylesheet" type="text/css" href="style/keertimaan.css"> -->
     <link rel="stylesheet" type="text/css" href="style/corecomp.css">
-
+    <link rel="stylesheet" type="text/css" href="style/noticeboard.css">
+    
 
 
 
@@ -25,7 +26,7 @@
 <body>
 
     <!-- new preloader -->
-    <div class="container-fluid preloader" id="preloader">
+ <div class="container-fluid preloader" id="preloader">
 
         <img class="outer" src="./img/outer.png" alt="logo">
         <img class="middle" src="./img/middle.png" alt="logo">
@@ -36,7 +37,7 @@
 
         <h3>Issuing Communiqué...</h3>
     </div>
-
+ 
     <div class="content123">
         <section id="nav-bar">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
@@ -241,14 +242,100 @@
         <!-- AbD content end-->
         <div id="first-page">
             <div class="parallax">
-                <div class="content">
-                    <div class="centered">
-                        <div class="fade-in">
-                            <h1 id="white_heading"><b>Communiqué</b> IIT&nbsp;Kharagpur</h1>
-                            <h3 class="heading3">The Official Soft Skills & Personality Development Society</h3>
+                
+<!--                     <div class="noticeboard-slider">
+                        
+                        <div class="noticeboard-slides">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            
+                            <div class="noticeboard-slide first">
+                                <img src="images/1.jpeg" alt="1">
+                            </div>
+                            <div class="noticeboard-slide">
+                                <img src="images/2.jpeg" alt="1">
+                            </div>
+                            <div class="noticeboard-slide">
+                                <img src="images/3.jpeg" alt="1">
+                            </div>
+
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                            </div>
+                        </div>
+
+                        <div class="navigation-btn">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
                         </div>
                     </div>
+ -->
+                <div class="header">
+                    
+                    <div class="content">
+                        <div class="centered">
+                            <div class="fade-in">
+                                <h1 id="white_heading"><b>Communiqué</b> IIT&nbsp;Kharagpur</h1>
+                                <h3 class="heading3">The Official Soft Skills & Personality Development Society</h3>
+                            </div>
+                        </div>
+                    </div> 
+                    <div id="noticeboard-slider">
+                        <input type="radio" name="noticeboard-slider" id="slide1" checked data-number="1"/>
+                        <input type="radio" name="noticeboard-slider" id="slide2" data-number="2" />
+                        <input type="radio" name="noticeboard-slider" id="slide3" data-number="3" />
+                        <input type="radio" name="noticeboard-slider" id="slide4" data-number="4" />
+                        
+                        <div id="noticeboard-slides">
+                            <div id="overflow">
+                                <div class="inner">
+                                    <div class="noticeboard-slide slide_1">
+                                    <div class="noticeboard-slide-content">
+                                        <h2>Event1 Name</h2>
+                                        <p>Event1 Description</p>
+                                    </div>
+                                    </div>
+                                    <div class="noticeboard-slide slide_2">
+                                    <div class="noticeboard-slide-content">
+                                        <h2>Event2 Name</h2>
+                                        <p>Event2 Description</p>
+                                    </div>
+                                    </div>
+                                    <div class="noticeboard-slide slide_3">
+                                    <div class="noticeboard-slide-content">
+                                        <h2>Event3 Name</h2>
+                                        <p>Event3 Description</p>
+                                    </div>
+                                    </div>
+                                    <div class="noticeboard-slide slide_4">
+                                    <div class="noticeboard-slide-content">
+                                        <h2>Event4 Name</h2>
+                                        <p>Event4 Description</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                            <label for="slide4"></label>
+                        </div>
+                        <div id="bullets">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                            <label for="slide4"></label>
+                        </div>
+                    </div>  
                 </div>
+   
+
             </div>
         </div>
 
@@ -1018,15 +1105,16 @@
 <!-- <script src="vendor/jquery/dist/jquery.min.js"></script> -->
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-<script src="script/scrollgal.js"></script>
+<!-- <script src="script/scrollgal.js"></script> -->
 <!-- <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script> -->
-<script src="script/form_validation.js"></script>
+<!-- <script src="script/form_validation.js"></script> -->
 <script src="script/script.js"></script>
 <!-- <script src="script/preloader.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="script/multislider.js"></script>
+<script src="script/noticeboard.js"></script>
 <script type="text/javascript">
     $(window).on('load', function() {
         $(".preloader").fadeOut(2200, function() {
