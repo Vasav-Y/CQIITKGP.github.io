@@ -3,7 +3,15 @@ const radioButton2 = document.getElementById("slide2");
 const radioButton3 = document.getElementById("slide3");
 const radioButton4 = document.getElementById("slide4");
 const noticeBoard = document.getElementById("noticeboard-slider");
+const img1 = document.getElementById("img1");
+const otherImgs = document.getElementsByClassName("img-others");
 const radioButtons = [radioButton1, radioButton2, radioButton3, radioButton4];
+
+const height = img1.naturalHeight;
+for (let i = 0; i < otherImgs.length; i++) {
+  otherImgs[i].style.height = `${height}px`;
+}
+
 const currElement = 0;
 let i = currElement;
 const noticeBoardAuto = function () {

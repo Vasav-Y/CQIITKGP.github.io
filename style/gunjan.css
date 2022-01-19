@@ -1131,4 +1131,5 @@ ul {
 .header{
     display: flex;
     height: 100%;
+    justify-content: space-between;
 }
