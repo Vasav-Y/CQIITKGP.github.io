@@ -13,9 +13,11 @@
     justify-content: center;
     align-items: center;
 }
-.content123{
+
+.content123 {
     display: none;
 }
+
 .middle,
 .outer,
 .firstdot,
@@ -382,7 +384,7 @@ body {
 .parallax {
     background-image: url("../img/kgp1.jpg");
     padding-top: 62px;
-     height: 848px;
+    height: 848px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -398,7 +400,7 @@ body {
 }
 
 .content {
-     position: relative;
+    position: relative;
     /*top: 0;
     top: 0;
     left: 0;
@@ -1088,6 +1090,8 @@ hr {
   overflow: hidden;
   z-index: 100;
 }*/
+
+
 /* 
 .content123 {
     display: none;
@@ -1128,7 +1132,7 @@ ul {
     list-style-type: none;
 }
 
-.header{
+.header {
     display: flex;
     height: 100%;
     justify-content: space-between;
