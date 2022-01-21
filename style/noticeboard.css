@@ -195,4 +195,10 @@
   /*   #noticeboard-slides {
     height: 650px;
   } */
+  .content {
+    display: none !important;
+  }
+  #noticeboard-slider {
+    width: 100% !important;
+  }
 }
