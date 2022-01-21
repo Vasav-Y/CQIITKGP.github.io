@@ -170,3 +170,29 @@
 .noticeBoard-fadein {
   opacity: 1;
 }
+@media only screen and (max-width: 1024px) {
+  .parallax.content {
+    width: 50% !important;
+  }
+  #noticeboard-slider {
+    width: 50% !important;
+  }
+  .event_image {
+    max-width: 100%;
+  }
+
+  /*   #noticeboard-slider {
+    height: 600px;
+  } */
+}
+@media only screen and (max-width: 600px) {
+  #white_heading {
+    font-size: 30px;
+  }
+  #bullets {
+    margin-top: 130px;
+  }
+  /*   #noticeboard-slides {
+    height: 650px;
+  } */
+}

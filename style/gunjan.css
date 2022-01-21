@@ -608,11 +608,10 @@ ul.b{
         min-height: fit-content;
     }
     .content {
-        width: 90%;
-        height: 60%;
+        width: 50%;
+        height: 100%;
         position: relative;
-        top: 25%;
-        left: 5%;
+
         display: flex;
         background: rgba(0, 48, 91, 0.8);
     }
