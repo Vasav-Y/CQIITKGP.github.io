@@ -17,7 +17,6 @@ body {
 .headingcc {
     font-size: 6vw;
     color: #00305b;
-    padding-left: 20%;
 }
 
 .maincc {
@@ -91,10 +90,7 @@ body {
         padding-left: 5%;
         padding-right: 5%;
     }
-    .headingcc {
-        padding-left: 47%;
-    }
-    /* .headingcc {
+    /*.headingcc {
         font-size: 10vw;
     }
     .boxcc {
