@@ -4,6 +4,7 @@ const radioButton3 = document.getElementById("slide3");
 const radioButton4 = document.getElementById("slide4");
 const noticeBoard = document.getElementById("noticeboard-slider");
 const img1 = document.getElementById("img1");
+const content = document.querySelector(".content");
 const otherImgs = document.getElementsByClassName("img-others");
 const radioButtons = [radioButton1, radioButton2, radioButton3, radioButton4];
 
@@ -34,5 +35,6 @@ radioButtons.forEach((radioButton) =>
 );
 const noticeboardToggle = function () {
   noticeBoard.classList.toggle("noticeBoard-fadeout");
+  content.classList.toggle("disp");
   noticeBoard.classList.toggle("noticeBoard-fadein");
 };

@@ -195,8 +195,9 @@
   /*   #noticeboard-slides {
     height: 650px;
   } */
-  .content {
+  .disp {
     display: none !important;
+    width: 100%;
   }
   #noticeboard-slider {
     width: 100% !important;
