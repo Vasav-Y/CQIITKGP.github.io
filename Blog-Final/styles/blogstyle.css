@@ -257,3 +257,9 @@ html {
   text-align: center;
   font-weight: 500;
 }
+#alrt{
+  display: none;
+  z-index: 10;
+  position: fixed;
+  top: 80px;
+}
