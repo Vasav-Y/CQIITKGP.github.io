@@ -5,7 +5,7 @@ var objec= document.getElementById("cnt");
 var object= document.getElementById("cn");
 var objects= document.getElementById("c");
 var bjects= document.getElementById("b1");
-var asideOn = true;
+var asideOn = false;
 
 document.getElementById("btton").addEventListener("click",function(){
 	

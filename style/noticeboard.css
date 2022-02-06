@@ -170,6 +170,9 @@
 .noticeBoard-fadein {
   opacity: 1;
 }
+.event_image {
+  height: 333px;
+}
 @media only screen and (max-width: 1024px) {
   .parallax.content {
     width: 50% !important;
@@ -179,6 +182,7 @@
   }
   .event_image {
     max-width: 100%;
+    height: 333px;
   }
 
   /*   #noticeboard-slider {
@@ -197,9 +201,31 @@
   } */
   .disp {
     display: none !important;
-    width: 100%;
+    /* width: 100%; */
   }
   #noticeboard-slider {
     width: 100% !important;
   }
+}
+.notice_button {
+  position: fixed;
+  bottom: 10px;
+  right: 16px;
+  background-color: #00305b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  z-index: 10;
+  border: 2px solid #007ea7;
+  box-shadow: 1.5px 1.5px 1.5px 0.5px #0ff;
+}
+
+.button_dance_on {
+  background-color: white;
+  color: #00305b;
+}
+.button_dance_off {
+  background-color: #00305b;
+  color: white;
 }

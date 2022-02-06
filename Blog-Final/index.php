@@ -138,10 +138,6 @@
         </div>
       </div>
     </div>
-    <div class="alert alert-danger fade show" role="alert" id="alrt">
-        <strong>Login Failed!</strong> Invalid username or password!
-        <button type="button" class="btn-close" aria-label="Close" id="close"></button>
-    </div>
     <br />
     <div class="bloghead">
 

@@ -123,7 +123,6 @@
     position: fixed;
     /* top: 500px; */
     transition: all 0.5s;
-    top:120px;
 }
 
 #cntnt {
@@ -235,7 +234,6 @@ br {
     /* top: 500px; */
     margin-top: 0;
     /* overflow: hidden; */
-    top: 120px;
 }
 
 .rightside a {
