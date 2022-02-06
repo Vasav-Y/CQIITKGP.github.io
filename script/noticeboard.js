@@ -37,7 +37,7 @@ radioButtons.forEach((radioButton) =>
 );
 const noticeboardToggle = function() {
     noticeBoard.classList.toggle("noticeBoard-fadeout");
-    content.classList.toggle("disp");
+    // content.classList.toggle("disp");
 
     // content.classList.toggle("disp");
     noticeBoard.classList.toggle("noticeBoard-fadein");
