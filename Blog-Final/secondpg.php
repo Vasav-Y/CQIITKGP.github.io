@@ -84,7 +84,7 @@ if($id == $idobtained)
     <div class="everything">
         <div class="loq hide" id="loqid">
             <button id="btton">Questions</button>
-            <aside id="mainAside" class="Aside animation">
+            <aside id="mainAside" class="animation">
                 <ul class="navbar-nav pl-3">';
                 $no = 0;
                 $nos=0;
@@ -215,7 +215,7 @@ if($id == $idobtained)
     </div>
             </div>
             <div class="rightside hide" id="rtside"> <button  class="rtbtn" id="btton2">Read Related Blogs</button>
-            <div class="rflist slide-in-right" id="rlist" style="display: none;">
+            <div class="rflist slide-in-right" id="rlist" style="display: block;">
             <ul>';
             
     $sql3 = "SELECT Title, blogid FROM `bloglist` WHERE blogid <> '$idobtained' AND Series = '$series' ORDER BY blogid DESC";
