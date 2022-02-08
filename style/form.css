@@ -130,6 +130,19 @@ input[type=submit]:hover{
     opacity: 100%;
 }
 
+@media screen and (max-width: 400px) {
+    .contact_links_data {
+        margin-left: 15%;
+    }
+    .alumniPageFooter {
+        padding-left: 6%;
+        margin-left: 0;
+    }
+    .faqspagefooter {
+        margin-left: -6.7%;
+    }
+}
+
 
 /* @media only screen and (min-width: 768px){
   .cols-1 {width: 45%;}
@@ -319,7 +332,7 @@ textarea:focus {
 
 
 /* @media only screen and (max-width: 580px) {
-	#form-div{
+	#form-div{c
 		left: 3%;
 		margin-right: 3%;
 		width: 88%;
