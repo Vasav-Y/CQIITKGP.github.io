@@ -73,6 +73,20 @@
           </div>
         </div>
         <div class="mb-3 mt-5 ml-5">
+                <label for="Date" class="form-label">Date of publish</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="Date"
+            id="form"
+            aria-describedby="emailHelp"
+          />
+          <div id="Date" class="form-text">
+            YYYY-MM-DD Example: 2020-01-31
+          </div>
+        </div>
+        <div class="mb-3 mt-5 ml-5">
           <label for="company" class="form-label"
             >Company</label
           >
@@ -196,7 +210,7 @@
                     echo "<p>You forgot to fill all fields</p>";
                 }
                 elseif ($_GET["error"]=="none") {
-                  echo "<p>Please 'sign in' to visit the profile page</p>";
+                  echo "<p>The blog has been submitted!</p>";
               }
 
             }

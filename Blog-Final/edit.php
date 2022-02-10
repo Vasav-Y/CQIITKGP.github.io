@@ -40,6 +40,7 @@ include 'dbconnect.php';
                         $interviewer = $row['Interviewer'];
                         $interviewee = $row['Interviewee'];
                         $placeNintern = $row['placeNintern'];
+                        $date = $row['Date'];
                         $company = $row['Company'];
                         $department = $row['Department'];
                         $series = $row['Series'];
@@ -80,6 +81,20 @@ include 'dbconnect.php';
                             <div id="placeNinternn" class="form-text">
                             Write either PLACEMENT or INTERNSHIP
                             </div>
+                        </div>
+                        <div class="mb-3 mt-5 ml-5">
+                            <label for="Date" class="form-label">Date of publish</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="Date"
+                                value = "'.$date.'"
+                                id="form"
+                                aria-describedby="emailHelp"
+                            />
+                          <div id="Date" class="form-text">
+                            YYYY-MM-DD Example: 2020-01-31
+                          </div>
                         </div>
                         <div class="mb-3 mt-5 ml-5">
                             <label for="company" class="form-label"

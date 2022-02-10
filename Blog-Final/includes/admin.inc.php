@@ -2,17 +2,18 @@
 #table-blog
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id=$_POST["blogid"];
-    $conn = mysqli_connect('localhost', 'root', '', 'blog');
+    $conn = mysqli_connect('localhost', 'id18409446_cqwebteam', 'ra5Py7eA_O]d7TTz', 'id18409446_blog');
     $interviewer=$_POST["Interviewer"];
     $interviewee=$_POST["Interviewee"];
     $title=$_POST["title"];
     $dept=$_POST["Department"];
     $series=$_POST["Series"];
     $placenintern=$_POST["placeNintern"];
+    $date = $_POST["Date"];
     $desc=$_POST["Desc"];
     $company=$_POST["company"];
     $noquesiton = $_POST['QuestionNo'];
-    echo $noquesiton;
+    // echo $noquesiton;
     //var_dump($_POST['QS']);
     $QSummary = $_POST['QS'];
     $ques = $_POST['Q'];
@@ -27,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $k=0;
 
-    $sql="INSERT INTO `bloglist` (`blogid`, `Interviewer`, `Interviewee`, `Title`, `Department`, `Series`, `placeNintern`, `Descript`, `Company`, `FacebookLink`, `linkedInLink`, `instaLink`, `photo`) VALUES ('$id', '$interviewer', '$interviewee', '$title', '$dept', '$series', '$placenintern', '$desc', '$company', '$fb', '$linkedin', '$ig', '$pic');";
+    $sql="INSERT INTO `bloglist` (`blogid`, `Interviewer`, `Interviewee`, `Title`, `Department`, `Series`, `placeNintern`, `Date`, `Descript`, `Company`, `FacebookLink`, `linkedInLink`, `instaLink`, `photo`) VALUES ('$id', '$interviewer', '$interviewee', '$title', '$dept', '$series', '$placenintern', '$date', '$desc', '$company', '$fb', '$linkedin', '$ig', '$pic');";
     for(;$k<$noquesiton;$k++)
     {
         $sql2="INSERT INTO `conversation` (`blogid`, `QSummary`, `Question`, `Answer`) VALUES ('$id', '$QSummary[$k]', '$ques[$k]', '$ans[$k]');";
@@ -44,7 +45,7 @@ if (emptyInputSignup($interviewer,$interviewee,$title,$dept,$series,$placeninter
         header("location: ../admin.php?error=emptyinput");
         exit();
 }  
-    if (emptyInputConvo($qsummary,$ques,$ans) !== false) {
+    if (emptyInputConvo($QSummary,$ques,$ans) !== false) {
         header("location: ../admin.php?error=emptyconvo");
         exit();
     }
