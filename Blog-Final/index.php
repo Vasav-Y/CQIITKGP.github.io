@@ -5,6 +5,7 @@
     $password = "ra5Py7eA_O]d7TTz";
     $database = "id18409446_blog";
     $conn = mysqli_connect($server, $user, $password, $database);
+
 ?>
 
 <!doctype html>
@@ -420,8 +421,13 @@
             </div>
         </div>
         <?php
+            $type = gettype($conn);
+            // echo $type;
             $query = "SELECT * FROM bloglist ORDER BY Date DESC";
             $cur = mysqli_query($conn, $query);
+            $type=gettype($cur);
+            // echo $type;
+            // var_dump($cur);
             echo '<div class="coloumn right">
                     <div class="latestlist">';
             while($row = mysqli_fetch_assoc($cur))

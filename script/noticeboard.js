@@ -33,12 +33,21 @@ radioButtons.forEach((radioButton) =>
     noticeBoardInterval = setInterval(noticeBoardAuto, 5000);
   })
 );
+let noticeBoard_visible = true;
 const noticeboardToggle = function () {
   noticeBoard.classList.toggle("noticeBoard-fadeout");
   // content.classList.toggle("disp");
-
   // content.classList.toggle("disp");
   noticeBoard.classList.toggle("noticeBoard-fadein");
+  noticeBoard_visible = !noticeBoard_visible;
+  if (
+    document.documentElement.scrollTop > 545 &&
+    noticeBoard_visible === true
+  ) {
+    document.documentElement.scrollTop = 0;
+    // console.log("executed scrollTop");
+    // noticeboardToggle();
+  }
 };
 close.forEach((el) => el.addEventListener("click", noticeboardToggle));
 const buttonBlink = function () {
@@ -46,3 +55,15 @@ const buttonBlink = function () {
   noticeboard_button.classList.toggle("button_dance_off");
 };
 setInterval(buttonBlink, 1000);
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+/* function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+ */
