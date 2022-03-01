@@ -1,10 +1,11 @@
 <?php
     //Connect db
     $server = "localhost";
-    $user = "root";
-    $password = "";
-    $database = "blog";
+    $user = "id18409446_cqwebteam";
+    $password = "ra5Py7eA_O]d7TTz";
+    $database = "id18409446_blog";
     $conn = mysqli_connect($server, $user, $password, $database);
+
 ?>
 
 <!doctype html>
@@ -41,32 +42,20 @@
                     <!--ml-auto for right alignment -->
 
                     <li class="nav-item active mx-auto">
-                        <a class="nav-link" href="#first-page">HOME</a>
+                        <a class="nav-link" href="../index.html">HOME</a>
+                    </li>
                     </li>
                     <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#practicearea">CORE COMPETENCIES</a>
+                        <a class="nav-link" href="../gallery.html">GALLERY</a>
                     </li>
                     <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#our-vision">OUR VISION</a>
+                        <a class="nav-link" href="../FAQs2.html">FAQs</a>
                     </li>
                     <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#our-attorneys"> EXECUTIVE TEAM</a>
+                        <a class="nav-link" href="../Events.html">EVENTS</a>
                     </li>
                     <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#form">CONTACT US</a>
-                    </li>
-
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" href="gallery.html">GALLERY</a>
-                    </li>
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" href="FAQs2.html">FAQs</a>
-                    </li>
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" href="Events.html">EVENTS</a>
-                    </li>
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" href="alumni.html">ALUMNI</a>
+                        <a class="nav-link" href="../alumni.html">ALUMNI</a>
                     </li>
                     <li class="nav-item mx-auto">
 
@@ -139,9 +128,42 @@
       </div>
     </div>
     <div class="alert alert-danger fade show" role="alert" id="alrt">
-        <strong>Login Failed!</strong> Invalid username or password!
-        <button type="button" class="btn-close" aria-label="Close" id="close"></button>
-    </div>
+  <strong>Login Failed!</strong> Wrong username or password!
+  <button type="button" class="btn-close" aria-label="Close" id="close"></button>
+</div>
+
+<!-- <script>  
+ $(document).ready(function(){  
+      $('#login_button').click(function(){  
+           var username = $('#admin-name').val();  
+           var password = $('#password').val();  
+           if(username != '' && password != '')  
+           {  
+                $.ajax({  
+                     url:"admin.php",  
+                     method:"POST",  
+                     data: {username:username, password:password},  
+                     success:function(data)  
+                     {  
+                          //alert(data);  
+                          if(data == 'No')  
+                          {  
+                               alert("Wrong Data");  
+                          }  
+                          else  
+                          {  
+                               $('#loginModal').hide();  
+                               location.reload();  
+                          }  
+                     }  
+                });  
+           }  
+           else  
+           {  
+                alert("Both Fields are required");  
+           }  
+      });
+  </script> -->
     <br />
     <div class="bloghead">
 
@@ -176,31 +198,31 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body" style="overflow: scroll; height:400px">
-              <button class="btnf" onclick="filterSelection('IM')">IM</button>
-              <button class="btnf" onclick="filterSelection('NA')">NA</button>
-              <button class="btnf" onclick="filterSelection('EE')">EE</button>
-              <button class="btnf" onclick="filterSelection('CS')">CS</button>
-              <button class="btnf" onclick="filterSelection('CS')">CE</button>
-              <button class="btnf" onclick="filterSelection('CH')">CH</button>
-              <button class="btnf" onclick="filterSelection('EC')">EC</button>
-              <button class="btnf" onclick="filterSelection('AE')">AE</button>
-              <button class="btnf" onclick="filterSelection('AG')">AG</button>
-              <button class="btnf" onclick="filterSelection('AR')">AR</button>
-              <button class="btnf" onclick="filterSelection('BT')">BT</button>
-              <button class="btnf" onclick="filterSelection('CY')">CY</button>
-              <button class="btnf" onclick="filterSelection('EX')">EX</button>
-              <button class="btnf" onclick="filterSelection('GG')">GG</button>
-              <button class="btnf" onclick="filterSelection('HS')">HS</button>
-              <button class="btnf" onclick="filterSelection('IE')">IE</button>
-              <button class="btnf" onclick="filterSelection('MA')">MA</button>
-              <button class="btnf" onclick="filterSelection('ME')">ME</button>
-              <button class="btnf" onclick="filterSelection('MF')">MF</button>
-              <button class="btnf" onclick="filterSelection('MI')">MI</button>
-              <button class="btnf" onclick="filterSelection('MT')">MT</button>
-              <button class="btnf" onclick="filterSelection('NA')">NA</button>
-              <button class="btnf" onclick="filterSelection('PH')">PH</button>
-              <button class="btnf" onclick="filterSelection('QE')">QE</button>
-              <button class="btnf" onclick="filterSelection('QM')">QM</button>
+              <button class="btnf" onclick="filterSelection(' IM ')">IM</button>
+              <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
+              <button class="btnf" onclick="filterSelection(' EE ')">EE</button>
+              <button class="btnf" onclick="filterSelection(' CS ')">CS</button>
+              <button class="btnf" onclick="filterSelection(' CE ')">CE</button>
+              <button class="btnf" onclick="filterSelection(' CH ')">CH</button>
+              <button class="btnf" onclick="filterSelection(' EC ')">EC</button>
+              <button class="btnf" onclick="filterSelection(' AE ')">AE</button>
+              <button class="btnf" onclick="filterSelection(' AG ')">AG</button>
+              <button class="btnf" onclick="filterSelection(' AR ')">AR</button>
+              <button class="btnf" onclick="filterSelection(' BT ')">BT</button>
+              <button class="btnf" onclick="filterSelection(' CY ')">CY</button>
+              <button class="btnf" onclick="filterSelection(' EX ')">EX</button>
+              <button class="btnf" onclick="filterSelection(' GG ')">GG</button>
+              <button class="btnf" onclick="filterSelection(' HS ')">HS</button>
+              <button class="btnf" onclick="filterSelection(' IE ')">IE</button>
+              <button class="btnf" onclick="filterSelection(' MA ')">MA</button>
+              <button class="btnf" onclick="filterSelection(' ME ')">ME</button>
+              <button class="btnf" onclick="filterSelection(' MF ')">MF</button>
+              <button class="btnf" onclick="filterSelection(' MI ')">MI</button>
+              <button class="btnf" onclick="filterSelection(' MT ')">MT</button>
+              <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
+              <button class="btnf" onclick="filterSelection(' PH ')">PH</button>
+              <button class="btnf" onclick="filterSelection(' QE ')">QE</button>
+              <button class="btnf" onclick="filterSelection(' QM ')">QM</button>
             </div>
           </div>
         </div>
@@ -253,13 +275,48 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              <h5 class="filteropt">Type</h5>
+              <h5 class="filteropt">Publication Year</h5>
             </button>
           </h2>
           <div
             id="collapseThree"
             class="accordion-collapse collapse"
             aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <button class="btnf" onclick="filterSelection('2022')">
+                2022
+              </button>
+              <button class="btnf" onclick="filterSelection('2021')">
+                2021
+              </button>
+              <button class="btnf" onclick="filterSelection('2020')">
+                2020
+              </button>
+              <button class="btnf" onclick="filterSelection('2019')">
+                2019
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <h5 class="filteropt">Type</h5>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
@@ -297,31 +354,31 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body" style="overflow: scroll; height: 80px">
-                                <button class="btnf" onclick="filterSelection('IM')"> IM</button><br>
-                                <button class="btnf" onclick="filterSelection('NA')"> NA</button><br>
-                                <button class="btnf" onclick="filterSelection('EE')"> EE</button><br>
-                                <button class="btnf" onclick="filterSelection('CS')"> CS</button><br>
-                                <button class="btnf" onclick="filterSelection('CS')">CE</button>
-                                <button class="btnf" onclick="filterSelection('CH')">CH</button>
-                                <button class="btnf" onclick="filterSelection('EC')">EC</button>
-                                <button class="btnf" onclick="filterSelection('AE')">AE</button>
-                                <button class="btnf" onclick="filterSelection('AG')">AG</button>
-                                <button class="btnf" onclick="filterSelection('AR')">AR</button>
-                                <button class="btnf" onclick="filterSelection('BT')">BT</button>
-                                <button class="btnf" onclick="filterSelection('CY')">CY</button>
-                                <button class="btnf" onclick="filterSelection('EX')">EX</button>
-                                <button class="btnf" onclick="filterSelection('GG')">GG</button>
-                                <button class="btnf" onclick="filterSelection('HS')">HS</button>
-                                <button class="btnf" onclick="filterSelection('IE')">IE</button>
-                                <button class="btnf" onclick="filterSelection('MA')">MA</button>
-                                <button class="btnf" onclick="filterSelection('ME')">ME</button>
-                                <button class="btnf" onclick="filterSelection('MF')">MF</button>
-                                <button class="btnf" onclick="filterSelection('MI')">MI</button>
-                                <button class="btnf" onclick="filterSelection('MT')">MT</button>
-                                <button class="btnf" onclick="filterSelection('NA')">NA</button>
-                                <button class="btnf" onclick="filterSelection('PH')">PH</button>
-                                <button class="btnf" onclick="filterSelection('QE')">QE</button>
-                                <button class="btnf" onclick="filterSelection('QM')">QM</button>
+                                <button class="btnf" onclick="filterSelection(' IM ')"> IM</button><br>
+                                <button class="btnf" onclick="filterSelection(' NA ')"> NA</button><br>
+                                <button class="btnf" onclick="filterSelection(' EE ')"> EE</button><br>
+                                <button class="btnf" onclick="filterSelection(' CS ')"> CS</button><br>
+                                <button class="btnf" onclick="filterSelection(' CE ')">CE</button>
+                                <button class="btnf" onclick="filterSelection(' CH ')">CH</button>
+                                <button class="btnf" onclick="filterSelection(' EC ')">EC</button>
+                                <button class="btnf" onclick="filterSelection(' AE ')">AE</button>
+                                <button class="btnf" onclick="filterSelection( 'AG ')">AG</button>
+                                <button class="btnf" onclick="filterSelection(' AR ')">AR</button>
+                                <button class="btnf" onclick="filterSelection(' BT ')">BT</button>
+                                <button class="btnf" onclick="filterSelection(' CY ')">CY</button>
+                                <button class="btnf" onclick="filterSelection(' EX ')">EX</button>
+                                <button class="btnf" onclick="filterSelection(' GG ')">GG</button>
+                                <button class="btnf" onclick="filterSelection(' HS ')">HS</button>
+                                <button class="btnf" onclick="filterSelection(' IE ')">IE</button>
+                                <button class="btnf" onclick="filterSelection(' MA ')">MA</button>
+                                <button class="btnf" onclick="filterSelection(' ME ')">ME</button>
+                                <button class="btnf" onclick="filterSelection(' MF ')">MF</button>
+                                <button class="btnf" onclick="filterSelection(' MI ')">MI</button>
+                                <button class="btnf" onclick="filterSelection(' MT ')">MT</button>
+                                <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
+                                <button class="btnf" onclick="filterSelection(' PH ')">PH</button>
+                                <button class="btnf" onclick="filterSelection(' QE ')">QE</button>
+                                <button class="btnf" onclick="filterSelection(' QM ')">QM</button>
                             </div>
                         </div>
                         </div>
@@ -364,12 +421,20 @@
             </div>
         </div>
         <?php
-            $query = "SELECT * FROM bloglist";
+            $type = gettype($conn);
+            // echo $type;
+            $query = "SELECT * FROM bloglist ORDER BY Date DESC";
             $cur = mysqli_query($conn, $query);
+            $type=gettype($cur);
+            // echo $type;
+            // var_dump($cur);
+            echo '<div class="coloumn right">
+                    <div class="latestlist">';
             while($row = mysqli_fetch_assoc($cur))
             {
                 $dept = $row['Department'];
                 $ser = $row['Series'];
+                $date = $row['Date'];
                 $plin = $row['placeNintern'];
                 $des =  $row['Descript'];
                 $plin2 = "";
@@ -380,21 +445,23 @@
                 //     $plin2 = "PLACEMENT";
                 // }
                 $comp = $row['Company'];
+                $year = substr($date, 0, 4);
                 $id = $row['blogid'];
-                echo '<div class="coloumn right">
-                    <div class="latestlist">
-                        <div class="blogc card mb-3 '.$dept.' '.$ser.' '.$plin.'" style="max-width: 840px;">
+                echo '
+                        <div class="blogc card mb-3 '.$dept.' '.$ser.' '.$plin.' '.$year.'" style="width: 840px;">
                             <div class="row g-0">
                             <div class="col-md-4" style="width: fit-content;height: fit-content;">
-                                <img src="'.$plink.'" class="img-fluid rounded-start" alt="..." style="width: 100%;height: 100%;
-                                max-width: 200px; max-height: 190px;">
+                                <img src="'.$plink.'" class="img-fluid rounded-start" alt="..." style=" width: 180px; height: 200px;">
                                 </div>
                                 <div class="col-md-8 cardsmScreen">
                                     <div class="card-body">
 
-                                        <h5 class="card-title">'.$title.'</h5>
-                                        <button type="button" class="btn btn-outline-primary btn-sm tag">'.$dept.'</button>
-                                        <button type="button" class="btn btn-outline-primary btn-sm tag">'.$ser2.'</button>
+                                        <h5 class="card-title">'.$title.'</h5>';
+                                        if($dept != "DEP" && $dept != ""){
+                                            echo '<button type="button" class="btn btn-outline-primary btn-sm tag">'.$dept.'</button>';
+                                        }
+                                        
+                                        echo '<button type="button" class="btn btn-outline-primary btn-sm tag">'.$ser2.'</button>
                                         <button type="button" class="btn btn-outline-primary btn-sm tag">'.$plin.'</button>
                                         
                                         <p class="card-text">'.$des.'</p>
@@ -402,11 +469,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>'
                         
-                    </div>
-                </div>';    
+                    ;    
             }
+            echo '</div>
+                </div>';
             
         ?>
         

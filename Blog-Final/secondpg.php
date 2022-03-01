@@ -28,32 +28,23 @@ echo
             <!--ml-auto for right alignment -->
 
             <li class="nav-item active mx-auto">
-                <a class="nav-link" href="#first-page">HOME</a>
-            </li>
-            <li class="nav-item mx-auto">
-                <a class="nav-link" href="#practicearea">CORE COMPETENCIES</a>
-            </li>
-            <li class="nav-item mx-auto">
-                <a class="nav-link" href="#our-vision">OUR VISION</a>
-            </li>
-            <li class="nav-item mx-auto">
-                <a class="nav-link" href="#our-attorneys"> EXECUTIVE TEAM</a>
-            </li>
-            <li class="nav-item mx-auto">
-                <a class="nav-link" href="#form">CONTACT US</a>
+                <a class="nav-link" href="../index.html">HOME</a>
             </li>
 
             <li class="nav-item mx-auto">
-                <a class="nav-link" href="gallery.html">GALLERY</a>
+                <a class="nav-link" href="../gallery.html">GALLERY</a>
             </li>
             <li class="nav-item mx-auto">
-                <a class="nav-link" href="FAQs2.html">FAQs</a>
+                <a class="nav-link" href="../FAQs2.html">FAQs</a>
             </li>
             <li class="nav-item mx-auto">
-                <a class="nav-link" href="Events.html">EVENTS</a>
+                <a class="nav-link" href="../Events.html">EVENTS</a>
             </li>
             <li class="nav-item mx-auto">
-                <a class="nav-link" href="alumni.html">ALUMNI</a>
+                <a class="nav-link" href="../alumni.html">ALUMNI</a>
+            </li>
+            <li class="nav-item mx-auto">
+                <a class="nav-link" href="index.php">BLOG</a>
             </li>
             <li class="nav-item mx-auto">
 

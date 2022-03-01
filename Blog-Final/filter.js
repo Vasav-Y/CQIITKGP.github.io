@@ -1,11 +1,12 @@
 filterSelection("all");
 function filterSelection(c) {
-  var x, i;
+  var x, i, ls;
   x = document.getElementsByClassName("blogc");
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show2");
+    // ls = x[i].classList;
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show2");
   }
 }
@@ -16,6 +17,7 @@ function w3AddClass(element, name) {
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
+      
     if (arr1.indexOf(arr2[i]) == -1) {
       element.className += " " + arr2[i];
     }
