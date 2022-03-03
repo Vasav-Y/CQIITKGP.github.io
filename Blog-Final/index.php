@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08f5394404.js" crossorigin="anonymous"></script>
 
-    <title>Our Blogs</title>
+    <title>Blogs</title>
 </head>
 
 <body>
@@ -188,7 +188,7 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              <h5 class="filteropt">Department</h5>
+              <h5 class="filteropt">Profile</h5>
             </button>
           </h2>
           <div
@@ -198,54 +198,6 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body" style="overflow: scroll; height:400px">
-              <button class="btnf" onclick="filterSelection(' IM ')">IM</button>
-              <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
-              <button class="btnf" onclick="filterSelection(' EE ')">EE</button>
-              <button class="btnf" onclick="filterSelection(' CS ')">CS</button>
-              <button class="btnf" onclick="filterSelection(' CE ')">CE</button>
-              <button class="btnf" onclick="filterSelection(' CH ')">CH</button>
-              <button class="btnf" onclick="filterSelection(' EC ')">EC</button>
-              <button class="btnf" onclick="filterSelection(' AE ')">AE</button>
-              <button class="btnf" onclick="filterSelection(' AG ')">AG</button>
-              <button class="btnf" onclick="filterSelection(' AR ')">AR</button>
-              <button class="btnf" onclick="filterSelection(' BT ')">BT</button>
-              <button class="btnf" onclick="filterSelection(' CY ')">CY</button>
-              <button class="btnf" onclick="filterSelection(' EX ')">EX</button>
-              <button class="btnf" onclick="filterSelection(' GG ')">GG</button>
-              <button class="btnf" onclick="filterSelection(' HS ')">HS</button>
-              <button class="btnf" onclick="filterSelection(' IE ')">IE</button>
-              <button class="btnf" onclick="filterSelection(' MA ')">MA</button>
-              <button class="btnf" onclick="filterSelection(' ME ')">ME</button>
-              <button class="btnf" onclick="filterSelection(' MF ')">MF</button>
-              <button class="btnf" onclick="filterSelection(' MI ')">MI</button>
-              <button class="btnf" onclick="filterSelection(' MT ')">MT</button>
-              <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
-              <button class="btnf" onclick="filterSelection(' PH ')">PH</button>
-              <button class="btnf" onclick="filterSelection(' QE ')">QE</button>
-              <button class="btnf" onclick="filterSelection(' QM ')">QM</button>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              <h5 class="filteropt">Series</h5>
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
               <button class="btnf" onclick="filterSelection('CORE_COMBAT')">
                 Core Combat
               </button>
@@ -266,22 +218,22 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
+          <h2 class="accordion-header" id="headingTwo">
             <button
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
+              data-bs-target="#collapseTwo"
               aria-expanded="false"
-              aria-controls="collapseThree"
+              aria-controls="collapseTwo"
             >
               <h5 class="filteropt">Publication Year</h5>
             </button>
           </h2>
           <div
-            id="collapseThree"
+            id="collapseTwo"
             class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
+            aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
@@ -297,6 +249,54 @@
               <button class="btnf" onclick="filterSelection('2019')">
                 2019
               </button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <h5 class="filteropt">Department</h5>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+                <button class="btnf" onclick="filterSelection(' IM ')">IM</button>
+                <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
+                <button class="btnf" onclick="filterSelection(' EE ')">EE</button>
+                <button class="btnf" onclick="filterSelection(' CS ')">CS</button>
+                <button class="btnf" onclick="filterSelection(' CE ')">CE</button>
+                <button class="btnf" onclick="filterSelection(' CH ')">CH</button>
+                <button class="btnf" onclick="filterSelection(' EC ')">EC</button>
+                <button class="btnf" onclick="filterSelection(' AE ')">AE</button>
+                <button class="btnf" onclick="filterSelection(' AG ')">AG</button>
+                <button class="btnf" onclick="filterSelection(' AR ')">AR</button>
+                <button class="btnf" onclick="filterSelection(' BT ')">BT</button>
+                <button class="btnf" onclick="filterSelection(' CY ')">CY</button>
+                <button class="btnf" onclick="filterSelection(' EX ')">EX</button>
+                <button class="btnf" onclick="filterSelection(' GG ')">GG</button>
+                <button class="btnf" onclick="filterSelection(' HS ')">HS</button>
+                <button class="btnf" onclick="filterSelection(' IE ')">IE</button>
+                <button class="btnf" onclick="filterSelection(' MA ')">MA</button>
+                <button class="btnf" onclick="filterSelection(' ME ')">ME</button>
+                <button class="btnf" onclick="filterSelection(' MF ')">MF</button>
+                <button class="btnf" onclick="filterSelection(' MI ')">MI</button>
+                <button class="btnf" onclick="filterSelection(' MT ')">MT</button>
+                <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
+                <button class="btnf" onclick="filterSelection(' PH ')">PH</button>
+                <button class="btnf" onclick="filterSelection(' QE ')">QE</button>
+                <button class="btnf" onclick="filterSelection(' QM ')">QM</button>
             </div>
           </div>
         </div>
