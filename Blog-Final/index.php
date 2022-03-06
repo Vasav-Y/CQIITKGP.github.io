@@ -1,9 +1,9 @@
 <?php
     //Connect db
     $server = "localhost";
-    $user = "id18409446_cqwebteam";
-    $password = "ra5Py7eA_O]d7TTz";
-    $database = "id18409446_blog";
+    $user = "root";
+    $password = "";
+    $database = "blog";
     $conn = mysqli_connect($server, $user, $password, $database);
 
 ?>
@@ -56,6 +56,9 @@
                     </li>
                     <li class="nav-item mx-auto">
                         <a class="nav-link" href="../alumni.html">ALUMNI</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="index.php">BLOG</a>
                     </li>
                     <li class="nav-item mx-auto">
 
@@ -169,7 +172,7 @@
 
     </div>
     <div class="latest-blogs">
-        <h1>Latest Blogs</h1>
+        <h1>Blogs</h1>
 
     </div>
     <div class="coloumn left" id="btnContainer">
@@ -179,6 +182,7 @@
       ><br />
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
+
           <h2 class="accordion-header" id="headingOne">
             <button
               class="accordion-button"
@@ -218,6 +222,7 @@
           </div>
         </div>
         <div class="accordion-item">
+
           <h2 class="accordion-header" id="headingTwo">
             <button
               class="accordion-button collapsed"
@@ -227,7 +232,9 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              <h5 class="filteropt">Publication Year</h5>
+
+              <h5 class="filteropt">Profiles</h5>
+
             </button>
           </h2>
           <div
@@ -329,6 +336,55 @@
             </div>
           </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h5 class="filteropt">Department</h5>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body" style="overflow: scroll; height:400px">
+              <button class="btnf" onclick="filterSelection(' IM ')">IM</button>
+              <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
+              <button class="btnf" onclick="filterSelection(' EE ')">EE</button>
+              <button class="btnf" onclick="filterSelection(' CS ')">CS</button>
+              <button class="btnf" onclick="filterSelection(' CE ')">CE</button>
+              <button class="btnf" onclick="filterSelection(' CH ')">CH</button>
+              <button class="btnf" onclick="filterSelection(' EC ')">EC</button>
+              <button class="btnf" onclick="filterSelection(' AE ')">AE</button>
+              <button class="btnf" onclick="filterSelection(' AG ')">AG</button>
+              <button class="btnf" onclick="filterSelection(' AR ')">AR</button>
+              <button class="btnf" onclick="filterSelection(' BT ')">BT</button>
+              <button class="btnf" onclick="filterSelection(' CY ')">CY</button>
+              <button class="btnf" onclick="filterSelection(' EX ')">EX</button>
+              <button class="btnf" onclick="filterSelection(' GG ')">GG</button>
+              <button class="btnf" onclick="filterSelection(' HS ')">HS</button>
+              <button class="btnf" onclick="filterSelection(' IE ')">IE</button>
+              <button class="btnf" onclick="filterSelection(' MA ')">MA</button>
+              <button class="btnf" onclick="filterSelection(' ME ')">ME</button>
+              <button class="btnf" onclick="filterSelection(' MF ')">MF</button>
+              <button class="btnf" onclick="filterSelection(' MI ')">MI</button>
+              <button class="btnf" onclick="filterSelection(' MT ')">MT</button>
+              <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
+              <button class="btnf" onclick="filterSelection(' PH ')">PH</button>
+              <button class="btnf" onclick="filterSelection(' QE ')">QE</button>
+              <button class="btnf" onclick="filterSelection(' QM ')">QM</button>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
 
@@ -448,7 +504,8 @@
                 $year = substr($date, 0, 4);
                 $id = $row['blogid'];
                 echo '
-                        <div class="blogc card mb-3 '.$dept.' '.$ser.' '.$plin.' '.$year.'" style="width: 840px;">
+
+                        <div data-id="'.$id.'"class="blogc card mb-3 '.$dept.' '.$ser.' '.$plin.' '.$year.'" style="width: 840px;">
                             <div class="row g-0">
                             <div class="col-md-4" style="width: fit-content;height: fit-content;">
                                 <img src="'.$plink.'" class="img-fluid rounded-start" alt="..." style=" width: 180px; height: 200px;">
@@ -469,7 +526,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>'
+                        </div>
+                        '
                         
                     ;    
             }
