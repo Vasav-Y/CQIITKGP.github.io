@@ -5,6 +5,7 @@ body {
   padding: 0px;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .slideshow_container {
@@ -519,3 +520,18 @@ img.Resize {
         margin: 0;
     }
 } */
+#myScrollBtn {
+  display: none;
+  position: fixed;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  bottom: 50px;
+  right: 50px;
+  z-index: 2;
+}
