@@ -35,7 +35,7 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
+/*
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("btnContainer");
 var btns = btnContainer.getElementsByClassName("btnf");
@@ -77,3 +77,4 @@ Array.from(document.getElementsByClassName("blogc")).forEach((el) => {
     window.location.href = `secondpg.php?blogid=${el.dataset.id}`;
   });
 });
+*/
