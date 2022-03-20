@@ -62,7 +62,8 @@ html {
   color: #00305b;
   font-family: "Lora", serif;
   font-weight: 600;
-  width: max-content;
+  width: 15vw;
+  text-align: center;
 }
 
 .ficonsur {
@@ -263,4 +264,7 @@ html {
   z-index: 10;
   position: fixed;
   top: 80px;
+}
+.accfilt{
+    overflow: scroll;
 }
