@@ -200,7 +200,7 @@
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body" style="overflow: scroll; height:400px">
+            <div class="accordion-body accfilt" style="overflow: scroll; height:fit-content;">
               <button class="btnf" onclick="filterSelection('CORE_COMBAT')">
                 Core Combat
               </button>
@@ -232,7 +232,7 @@
               aria-controls="collapseTwo"
             >
 
-              <h5 class="filteropt">Profiles</h5>
+              <h5 class="filteropt">Publication Year</h5>
 
             </button>
           </h2>
@@ -276,8 +276,9 @@
             class="accordion-collapse collapse"
             aria-labelledby="headingThree"
             data-bs-parent="#accordionExample"
+            style="overflow:scroll;"
           >
-            <div class="accordion-body">
+            <div class="accordion-body accfilt" style="height: 40vh;">
                 <button class="btnf" onclick="filterSelection(' IM ')">IM</button>
                 <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
                 <button class="btnf" onclick="filterSelection(' EE ')">EE</button>
