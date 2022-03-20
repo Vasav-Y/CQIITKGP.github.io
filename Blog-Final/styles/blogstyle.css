@@ -268,3 +268,7 @@ html {
 .accfilt{
     overflow: scroll;
 }
+.tag:hover{
+    background-color: white !important;
+    color: #0275d8 !important;
+}
