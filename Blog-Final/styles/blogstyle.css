@@ -45,8 +45,9 @@ html {
   left: 10%;
 }
 
-.heading1 h1 {
+.latest-blogs h1 {
   font-family: "Lora", serif;
+  font-weight: 700 !important;
 }
 
 .latest-blogs {
@@ -56,12 +57,13 @@ html {
   margin-top: 50px;
   margin-bottom: 40px;
   padding: 15px 20px;
-  background-color: #00305b;
-  border-radius: 100px;
-  color: white;
+  /* background-color: #00305b; */
+  /* border-radius: 100px; */
+  color: #00305b;
   font-family: "Lora", serif;
   font-weight: 600;
-  width: max-content;
+  width: 15vw;
+  text-align: center;
 }
 
 .ficonsur {
@@ -257,9 +259,16 @@ html {
   text-align: center;
   font-weight: 500;
 }
-#alrt{
+#alrt {
   display: none;
   z-index: 10;
   position: fixed;
   top: 80px;
+}
+.accfilt{
+    overflow: scroll;
+}
+.tag:hover{
+    background-color: white !important;
+    color: #0275d8 !important;
 }

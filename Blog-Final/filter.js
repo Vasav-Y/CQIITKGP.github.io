@@ -17,7 +17,6 @@ function w3AddClass(element, name) {
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-      
     if (arr1.indexOf(arr2[i]) == -1) {
       element.className += " " + arr2[i];
     }
@@ -36,7 +35,7 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
+/*
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("btnContainer");
 var btns = btnContainer.getElementsByClassName("btnf");
@@ -61,14 +60,21 @@ loginButton.addEventListener("click", function () {
   if (flag === 1) {
     console.log(1);
     window.location.href = "admin.php";
-  }
-  else{
+  } else {
     alrt = document.getElementById("alrt");
-    alrt.style.display = 'block';
+    alrt.style.display = "block";
   }
 });
 clsbtn = document.getElementById("close");
-clsbtn.addEventListener("click", function(){
+clsbtn.addEventListener("click", function () {
   alrtmod = document.getElementById("alrt");
   alrtmod.style.display = "none";
-})
+});
+Array.from(document.getElementsByClassName("blogc")).forEach((el) => {
+  // console.log(el);
+  console.log(el.dataset.id);
+  el.addEventListener("click", function () {
+    window.location.href = `secondpg.php?blogid=${el.dataset.id}`;
+  });
+});
+*/

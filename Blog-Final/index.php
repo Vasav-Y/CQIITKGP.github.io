@@ -1,9 +1,9 @@
 <?php
     //Connect db
     $server = "localhost";
-    $user = "id18409446_cqwebteam";
-    $password = "ra5Py7eA_O]d7TTz";
-    $database = "id18409446_blog";
+    $user = "root";
+    $password = "";
+    $database = "blog";
     $conn = mysqli_connect($server, $user, $password, $database);
 
 ?>
@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/blogstyle.css">
     <link rel="stylesheet" href="styles/gunjan.css">
+    <link rel="stylesheet" href="../style/stylescrollbtn.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -25,12 +26,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08f5394404.js" crossorigin="anonymous"></script>
 
-    <title>Our Blogs</title>
+    <title>Blogs</title>
 </head>
 
 <body>
 
-
+<button id="myScrollBtn" onclick="topFunction()">☝️</button>
     <section id="nav-bar">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
             <a class="navbar-brand" href="#first-page"><img src="images/logo.jpg">Communiqué</a>
@@ -56,6 +57,9 @@
                     </li>
                     <li class="nav-item mx-auto">
                         <a class="nav-link" href="../alumni.html">ALUMNI</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="index.php">BLOG</a>
                     </li>
                     <li class="nav-item mx-auto">
 
@@ -96,18 +100,16 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="handleLogin.php" method="POST">
               <div class="mb-3">
-                <label for="admin-name" class="col-form-label">Name:</label>
-                <input type="text" class="form-control" id="admin-name" />
+                <label for="admin-name" class="col-form-label">Userame:</label>
+                <input type="text" class="form-control" id="admin-name" name="username" />
               </div>
               <div class="mb-3">
                 <label for="password" class="col-form-label">Password</label>
-                <input type="password" class="form-control" id="password" />
+                <input type="password" class="form-control" id="password" name="password"/>
               </div>
-            </form>
-          </div>
-          <div class="modal-footer">
+              <div class="modal-footer">
             <button
               type="button"
               class="btn btn-secondary"
@@ -116,7 +118,7 @@
               Close
             </button>
             <button
-              type="button"
+              type="submit"
               name="login_button"
               id="login_button"
               class="btn btn-warning"
@@ -124,13 +126,13 @@
               Login
             </button>
           </div>
+            </form>
+          </div>
+
         </div>
       </div>
     </div>
-    <div class="alert alert-danger fade show" role="alert" id="alrt">
-  <strong>Login Failed!</strong> Wrong username or password!
-  <button type="button" class="btn-close" aria-label="Close" id="close"></button>
-</div>
+    
 
 <!-- <script>  
  $(document).ready(function(){  
@@ -169,7 +171,7 @@
 
     </div>
     <div class="latest-blogs">
-        <h1>Latest Blogs</h1>
+        <h1>Blogs</h1>
 
     </div>
     <div class="coloumn left" id="btnContainer">
@@ -178,6 +180,162 @@
         Show all</button
       ><br />
       <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h5 class="filteropt">Profile</h5>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body accfilt" style="overflow: scroll; height:fit-content;">
+              <button class="btnf" onclick="filterSelection('CORE_COMBAT')">
+                Core Combat
+              </button>
+              <button class="btnf" onclick="filterSelection('CONSULTALKS')">
+                Consultalks
+              </button>
+              <button class="btnf" onclick="filterSelection('PRODUCT')">
+                Product
+              </button>
+              <button class="btnf" onclick="filterSelection('FMCG_LUMINARIES')">
+                FMCG Luminaries
+              </button>
+              <button class="btnf" onclick="filterSelection('FINFORTE')">
+                Finforte
+              </button>
+              <button class="btnf" onclick="filterSelection('ML')">ML</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+
+              <h5 class="filteropt">Publication Year</h5>
+
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <button class="btnf" onclick="filterSelection('2022')">
+                2022
+              </button>
+              <button class="btnf" onclick="filterSelection('2021')">
+                2021
+              </button>
+              <button class="btnf" onclick="filterSelection('2020')">
+                2020
+              </button>
+              <button class="btnf" onclick="filterSelection('2019')">
+                2019
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <h5 class="filteropt">Department</h5>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+            style="overflow:scroll;"
+          >
+            <div class="accordion-body accfilt" style="height: 40vh;">
+                <button class="btnf" onclick="filterSelection(' IM ')">IM</button>
+                <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
+                <button class="btnf" onclick="filterSelection(' EE ')">EE</button>
+                <button class="btnf" onclick="filterSelection(' CS ')">CS</button>
+                <button class="btnf" onclick="filterSelection(' CE ')">CE</button>
+                <button class="btnf" onclick="filterSelection(' CH ')">CH</button>
+                <button class="btnf" onclick="filterSelection(' EC ')">EC</button>
+                <button class="btnf" onclick="filterSelection(' AE ')">AE</button>
+                <button class="btnf" onclick="filterSelection(' AG ')">AG</button>
+                <button class="btnf" onclick="filterSelection(' AR ')">AR</button>
+                <button class="btnf" onclick="filterSelection(' BT ')">BT</button>
+                <button class="btnf" onclick="filterSelection(' CY ')">CY</button>
+                <button class="btnf" onclick="filterSelection(' EX ')">EX</button>
+                <button class="btnf" onclick="filterSelection(' GG ')">GG</button>
+                <button class="btnf" onclick="filterSelection(' HS ')">HS</button>
+                <button class="btnf" onclick="filterSelection(' IE ')">IE</button>
+                <button class="btnf" onclick="filterSelection(' MA ')">MA</button>
+                <button class="btnf" onclick="filterSelection(' ME ')">ME</button>
+                <button class="btnf" onclick="filterSelection(' MF ')">MF</button>
+                <button class="btnf" onclick="filterSelection(' MI ')">MI</button>
+                <button class="btnf" onclick="filterSelection(' MT ')">MT</button>
+                <button class="btnf" onclick="filterSelection(' NA ')">NA</button>
+                <button class="btnf" onclick="filterSelection(' PH ')">PH</button>
+                <button class="btnf" onclick="filterSelection(' QE ')">QE</button>
+                <button class="btnf" onclick="filterSelection(' QM ')">QM</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <h5 class="filteropt">Type</h5>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <button class="btnf" onclick="filterSelection('INTERNSHIP')">
+                Internships
+              </button>
+              <button class="btnf" onclick="filterSelection('PLACEMENT')">
+                Placement
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button
@@ -226,109 +384,7 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              <h5 class="filteropt">Series</h5>
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <button class="btnf" onclick="filterSelection('CORE_COMBAT')">
-                Core Combat
-              </button>
-              <button class="btnf" onclick="filterSelection('CONSULTALKS')">
-                Consultalks
-              </button>
-              <button class="btnf" onclick="filterSelection('PRODUCT')">
-                Product
-              </button>
-              <button class="btnf" onclick="filterSelection('FMCG_LUMINARIES')">
-                FMCG Luminaries
-              </button>
-              <button class="btnf" onclick="filterSelection('FINFORTE')">
-                Finforte
-              </button>
-              <button class="btnf" onclick="filterSelection('ML')">ML</button>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              <h5 class="filteropt">Publication Year</h5>
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <button class="btnf" onclick="filterSelection('2022')">
-                2022
-              </button>
-              <button class="btnf" onclick="filterSelection('2021')">
-                2021
-              </button>
-              <button class="btnf" onclick="filterSelection('2020')">
-                2020
-              </button>
-              <button class="btnf" onclick="filterSelection('2019')">
-                2019
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFour">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFour"
-              aria-expanded="false"
-              aria-controls="collapseFour"
-            >
-              <h5 class="filteropt">Type</h5>
-            </button>
-          </h2>
-          <div
-            id="collapseFour"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingFour"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <button class="btnf" onclick="filterSelection('INTERNSHIP')">
-                Internships
-              </button>
-              <button class="btnf" onclick="filterSelection('PLACEMENT')">
-                Placement
-              </button>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
 
@@ -448,7 +504,8 @@
                 $year = substr($date, 0, 4);
                 $id = $row['blogid'];
                 echo '
-                        <div class="blogc card mb-3 '.$dept.' '.$ser.' '.$plin.' '.$year.'" style="width: 840px;">
+
+                        <div data-id="'.$id.'"class="blogc card mb-3 '.$dept.' '.$ser.' '.$plin.' '.$year.'" style="width: 840px;">
                             <div class="row g-0">
                             <div class="col-md-4" style="width: fit-content;height: fit-content;">
                                 <img src="'.$plink.'" class="img-fluid rounded-start" alt="..." style=" width: 180px; height: 200px;">
@@ -469,7 +526,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>'
+                        </div>
+                        '
                         
                     ;    
             }
@@ -494,6 +552,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
     <script src="filter.js"></script>
+    <script src="../script/scrollbtn.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

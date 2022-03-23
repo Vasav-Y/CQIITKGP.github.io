@@ -73,12 +73,14 @@ if($id == $idobtained)
 }
     echo '
     <div class="everything">
-        <div class="loq hide" id="loqid">
+        <div class="loq hide" id="loqid" style="overflow-y:scroll; height:80vh;">
             <button id="btton">Questions</button>
             <aside id="mainAside" class="animation">
                 <ul class="navbar-nav pl-3">';
                 $no = 0;
                 $nos=0;
+                $prevent_repeat=0;
+                $QSummary1='';
                 $idobtained=$_GET['blogid'];
                 $sql = "SELECT * FROM `conversation`";
                 $result = mysqli_query($conn, $sql);
@@ -90,6 +92,14 @@ if($id == $idobtained)
                     {
                         $SNo = $row['S.No'];
                         $QSummary = $row['QSummary'];
+                        if($QSummary1 == $QSummary){
+                            $prevent_repeat=0;
+                            break;
+                        }
+                        if($prevent_repeat==0){
+                            $QSummary1=$QSummary;
+                            $prevent_repeat++;
+                        }
                         $Question = $row['Question'];
                         $Answer = $row['Answer'];
                         echo '<li class="links nav-item"><a class="nav-link"href="#inPageLink'.$nos.'"><span class="py-1" id="nl1"><details><summary class="summ">'.$QSummary.'</summary><p>'.$Question.'</p></details></span></a></li>';
@@ -216,7 +226,7 @@ if($id == $idobtained)
         $blogid_s = "=".strval($row["blogid"]);
         $link_full = $part_link.$blogid_s;
         echo '<li class="read"><a class="readA" href='.$link_full.'>'.$row["Title"].'</a></li>';
-        if ($count >= 8){
+        if ($count >= 5){
             $count = 0;
             break;
         }
